@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "page/index",
+    "page/download/download"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "文件保存",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#dfdfdf",
+    "selectedColor": "#555555",
+    "borderStyle": "black",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "pagePath": "page/index",
+        "iconPath": "img/upload.png",
+        "selectedIconPath": "img/upload-selected.png",
+        "text": "上传"
+      },
+      {
+        "pagePath": "page/download/download",
+        "iconPath": "img/download.png",
+        "selectedIconPath": "img/download-selected.png",
+        "text": "下载"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx4f1b24bdc99fa23b"
+  ],
+  "debug": false
+}
