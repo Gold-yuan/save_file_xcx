@@ -33,3 +33,7 @@
   border-left-width: 4rpx;
   border-right-width: 4rpx;
 }
+
+action-sheet-item.warn {
+    color: #e64340;
+}

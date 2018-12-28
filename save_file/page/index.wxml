@@ -8,8 +8,19 @@
 
   <view class='imgList'>
     <block wx:for='{{fileList}}' wx:key='qiniulist'>
-      <image src='{{domain + item.key}}' mode='widthFix'></image>
+      <image src='{{item}}' mode='widthFix' bindtap='previewImage' bindlongtap="showActions" data-index='{{index}}' data-src="{{item}}"></image>
     </block>
   </view>
 
 </view>
+
+
+
+<action-sheet hidden="{{!showActionsSheet}}" bindchange="hideActionSheet">
+  <action-sheet-item bindtap="downloadImage">保存到本地</action-sheet-item>
+  <action-sheet-item class="warn" bindtap="deleteImage">删除图片</action-sheet-item>
+  <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>
+
+<loading hidden="{{!showLoading}}" bindchange="hideLoading">{{loadingMessage}}</loading>
+<toast hidden="{{!showToast}}" duration="1000" bindchange="hideToast">{{toastMessage}}</toast>
