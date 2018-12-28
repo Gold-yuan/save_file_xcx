@@ -1,14 +1,15 @@
 <!--index.wxml-->
 <view class="main">
   <button bindtap='didPressChooesImage'>上传图片</button>
-  <view class="image-container">
-    <image class="image" src="{{imageObject.imageURL}}" mode="aspectFit"></image>
+  <view class='tips'>
+    <view class='left'>当前总{{imgCount}}张图片</view>
+    <view class='right' bindtap='manager'>管理</view>
   </view>
 
-  <view class="data">
-    hash: <text>{{imageObject.hash}}\n\n</text>
-    key: <text>{{imageObject.key}}\n\n</text>
-    imageURL: <text>{{imageObject.imageURL}}</text>
+  <view class='imgList'>
+    <block wx:for='{{fileList}}' wx:key='qiniulist'>
+      <image src='{{domain + item.key}}' mode='widthFix'></image>
+    </block>
   </view>
-  <button bindtap='didCancelTask'>取消任务</button>
+
 </view>

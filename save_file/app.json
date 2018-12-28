@@ -1,7 +1,8 @@
 {
   "pages": [
     "page/index",
-    "page/download/download"
+    "page/download/download",
+    "page/sdkdemo/demo"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -23,6 +24,12 @@
       },
       {
         "pagePath": "page/download/download",
+        "iconPath": "img/download.png",
+        "selectedIconPath": "img/download-selected.png",
+        "text": "下载"
+      },
+      {
+        "pagePath": "page/sdkdemo/demo",
         "iconPath": "img/download.png",
         "selectedIconPath": "img/download-selected.png",
         "text": "下载"

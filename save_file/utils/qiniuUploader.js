@@ -157,11 +157,11 @@ function getQiniuToken(callback) {
 function uploadURLFromRegionCode(code) {
     var uploadURL = null;
     switch(code) {
-        case 'z0': uploadURL = 'https://up.qiniup.com'; break;
-        case 'z1': uploadURL = 'https://up-z1.qiniup.com'; break;
-        case 'z2': uploadURL = 'https://up-z2.qiniup.com'; break;
-        case 'na0': uploadURL = 'https://up-na0.qiniup.com'; break;
-        case 'as0': uploadURL = 'https://up-as0.qiniup.com'; break;
+        case 'z0': uploadURL = 'https://up.qbox.me'; break;
+        case 'z1': uploadURL = 'https://up-z1.qbox.me'; break;
+        case 'z2': uploadURL = 'https://up-z2.qbox.me'; break;
+        case 'na0': uploadURL = 'https://up-na0.qbox.me'; break;
+        case 'as0': uploadURL = 'https://up-as0.qbox.me'; break;
         default: console.error('please make the region is with one of [z0:hua dong, z1:hua bei, z2: hua nan, na0: bei mei, as0: dong nan ya]');
     }
     return uploadURL;

@@ -1,0 +1,35 @@
+.main button {
+  background-color: rgb(255, 115, 21);
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 3px solid rgb(245, 250, 255);
+}
+
+.tips {
+  padding: 3px;
+  background-color: rgb(123, 170, 241);
+  font-size: 12px;
+  color: white;
+  height: 14px;
+}
+
+.tips .left {
+  float: left;
+}
+
+.tips .right {
+  float: right;
+}
+
+.imgList {
+  background-color: black;
+}
+
+.imgList image {
+  width: 48%;
+  background-color: black;
+  border: 0rpx solid black;
+  border-left-width: 4rpx;
+  border-right-width: 4rpx;
+}
